@@ -1,0 +1,31 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String string=in.nextLine();
+        StringBuilder stringbuilder = new StringBuilder(string);
+        System.out.print("Enter the index to which string is inserted: ");
+        int index=in.nextInt();
+        stringbuilder.insert(index,string);
+        System.out.println("The string after insertion is "+stringbuilder.toString());
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
